@@ -1,0 +1,47 @@
+.imageiconclass {
+    width: 100px;
+}
+
+
+
+
+
+
+.program-plan-wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+
+.pp-term {
+    display: flex;
+    align-items: center; ####################
+}
+
+
+
+.activity-or-interest-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.activity-or-interest-item {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.music-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.music {
+    width: 352;
+    height: 198;
+}
