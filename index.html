@@ -7,125 +7,217 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--
+        Every 30 seconds, the page fades to black and a message appears "oh no, your time is up
+        the user must press a button "request additional time"
+        the user is given a random amount of additional time
+        There is a "Thank you for patience"
+        The timer appears and begins to count down again
+        Animations? Changing colour and shaking as time reaches zero
+    -->
 
-    <!-- Every 30 seconds, the page fades to black and a message appears "oh no, your time is up" -->
-        <!-- the user must press a button "request additional time" -->
-        <!-- the user is given a random amount of additional time -->
-        <!-- There is a "Thank you for patience" -->
-
-    <header>
+    <header id="section-header">
         <nav>
-
+            <ul>
+                <li><a href="#section-header">Home</a></li>
+                <li><a href="#section-about-me">What Me</a></li>
+                <li><a href="#section-studies">What Study</a></li>
+                <li><a href="#section-activities">What Do</a></li>
+                <li><a href="#section-music">What Listen</a></li>
+                <li><a href="#section-games">What Game</a></li>
+                <li><a href="#section-footer">Links</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>About Me</h1>
+        <section id="section-about-me">
+            <h1>What Me</h1>
             <ul>
-                <li>Name: Andrew Polak</li>
-                <li>Age: You have to guess</li>
-                <li>Ethnicity: Polish, Hungarian, Ukrainian</li>
-                <img src="assets/images/ethnicity.webp" alt="Ethnicity Icon" class="imageiconclass">
-                <li>City I was born in: Nice</li>
-                <li>Name of first pet: Try</li>
-                <li>In what city or town did my parents meet: Maybe</li>
-                <li>Mother's Maiden Name: Next Time</li>
+                <li><strong>Name:</strong> Andrew Polak</li>
+                <li><strong>Age:</strong> You have to guess</li>
+                <li><strong>Ethnicity:</strong> Polish, Hungarian, Ukrainian</li>
+                <!-- <img id="img-ethicity" src="assets/images/ethnicity.webp" alt="Ethnicity Icon" class="activity-icon"> -->
+                <li><strong>City I was born in:</strong> Nice</li>
+                <li><strong>Name of first pet:</strong> Try</li>
+                <li><strong>In what city or town did my parents meet:</strong> Maybe</li>
+                <li><strong>Mother's Maiden Name:</strong> Next Time</li>
             </ul>
         </section>
 
-        <section>
-            <h1>Studies</h1>
+        <section id="section-studies">
+            <h1>What Study</h1>
+            <p>Program:
+                <ul>
+                    <li><a href="https://www.handbook.unsw.edu.au/undergraduate/programs/2023/3789" target="_blank">3789 - Bachelor of Science / Science (Computer Science)</a></li>
+                </ul> 
+            </p>
+            <p>Specialisations:
+                <ul>
+                    <li><a href="https://www.handbook.unsw.edu.au/undergraduate/specialisations/2023/MATHM1" target="_blank">MATHM1 - Mathematics</a></li>
+                    <li><a href="https://www.handbook.unsw.edu.au/undergraduate/specialisations/2023/MATHT1" target="_blank">MATHT1 - Statistics</a></li>
+                    <li><a href="https://www.handbook.unsw.edu.au/undergraduate/programs/2024/3778" target="_blank">COMPA1 - Computer Science</a></li>
+                </ul>
+            </p>
 
-            <p>TODO: Degree, Specialisations, Program Plan</p>
-
+            <p>The Plan:</p>
             <div class="program-plan-wrapper">
                 <div></div>
-                <div class="pp-term">Term 1</div>
-                <div class="pp-term">Term 2</div>
-                <div class="pp-term">Term 3</div>
-                <div class="pp-year">2023</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="pp-year">2024</div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="pp-term-label">Term 1</div>
+                <div class="pp-term-label">Term 2</div>
+                <div class="pp-term-label">Term 3</div>
+
+                <div class="pp-year-label">2023</div>
+                <div class="pp-term">
+                </div>
+                <div class="pp-term"></div>
+                <div class="pp-term">
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2023/MATH1141/" target="_blank">
+                            <div class="pp-course-code">MATH1141</div>
+                            <div class="pp-course-desc">Higher Math 1A</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2023/COMP1511/" target="_blank">
+                            <div class="pp-course-code">COMP1511</div>
+                            <div class="pp-course-desc">Programming Fund.</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pp-year-label">2024</div>
+                <div class="pp-term">
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH1241/" target="_blank">
+                            <div class="pp-course-code">MATH1241</div>
+                            <div class="pp-course-desc">Higher Math 1B</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH1081/" target="_blank">
+                            <div class="pp-course-code">MATH1081</div>
+                            <div class="pp-course-desc">Discrete Mathematics</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/COMP1531/" target="_blank">
+                            <div class="pp-course-code">COMP1531</div>
+                            <div class="pp-course-desc">Software Engineering Fund.</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pp-term">
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH2601/" target="_blank">
+                            <div class="pp-course-code">MATH2601</div>
+                            <div class="pp-course-desc">Higher Linear Algebra</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH2901/" target="_blank">
+                            <div class="pp-course-code">MATH2901</div>
+                            <div class="pp-course-desc">Higher Theory of Statistics</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/COMP1521/" target="_blank">
+                            <div class="pp-course-code">COMP1521</div>
+                            <div class="pp-course-desc">Computer System Fund.</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="pp-term">
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH2621/" target="_blank">
+                            <div class="pp-course-code">MATH2621</div>
+                            <div class="pp-course-desc">Higher Complex Analysis</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/MATH2931/" target="_blank">
+                            <div class="pp-course-code">MATH2931</div>
+                            <div class="pp-course-desc">Higher Linear Models</div>
+                        </a>
+                    </div>
+                    <div class="pp-course">
+                        <a href="https://www.handbook.unsw.edu.au/undergraduate/courses/2024/COMP2521/" target="_blank">
+                            <div class="pp-course-code">COMP2521</div>
+                            <div class="pp-course-desc">Data Structures and Algorithms</div>
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
-        <section>
-            <h1>Activities & Interests</h1>
+        <section id="section-activities">
+            <h1>What Do</h1>
     
-            <div class="activity-or-interest-wrapper">
-                <div class="activity-or-interest-item">
+            <div class="activity-wrapper">
+                <div class="activity-item">
                     <div>Cycling</div>
-                    <img src="assets/images/cycling.webp" alt="Cycling Icon" class="imageiconclass">
+                    <img src="assets/images/cycling.webp" alt="Cycling Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
-                    <div>Motorcycling</div>
-                    <img src="assets/images/motorbiking.webp" alt="Motorbiking Icon" class="imageiconclass">
-                </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Skiing</div>
-                    <img src="assets/images/skiing.webp" alt="Skiing Icon" class="imageiconclass">
+                    <img src="assets/images/skiing.webp" alt="Skiing Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Swimming</div>
-                    <img src="assets/images/swimming.webp" alt="Swimming Icon" class="imageiconclass">
+                    <img src="assets/images/swimming.webp" alt="Swimming Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Piano & Guitar</div>
-                    <img src="assets/images/pianoguitar.webp" alt="Piano & Guitar Icon" class="imageiconclass">
+                    <img src="assets/images/pianoguitar.webp" alt="Piano & Guitar Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Gaming</div>
-                    <img src="assets/images/videogames.webp" alt="Video Gaming Icon" class="imageiconclass">
+                    <img src="assets/images/videogames.webp" alt="Video Gaming Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Math</div>
-                    <img src="assets/images/mathematics.webp" alt="Mathematics Icon" class="imageiconclass">
+                    <img src="assets/images/mathematics.webp" alt="Mathematics Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Comp Sci</div>
-                    <img src="assets/images/computerscience.webp" alt="Computer Science Icon" class="imageiconclass">
+                    <img src="assets/images/computerscience.webp" alt="Computer Science Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Circuits</div>
-                    <img src="assets/images/digitalcircuits.webp" alt="Digital Circuits Icon" class="imageiconclass">
+                    <img src="assets/images/digitalcircuits.webp" alt="Digital Circuits Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Coding</div>
-                    <img src="assets/images/programming.webp" alt="Programming Icon" class="imageiconclass">
+                    <img src="assets/images/programming.webp" alt="Programming Icon" class="activity-icon">
                 </div>
-                <div class="activity-or-interest-item">
+                <div class="activity-item">
                     <div>Music</div>
-                    <img src="assets/images/musiclistening.webp" alt="Music Listening Icon" class="imageiconclass">
+                    <img src="assets/images/musiclistening.webp" alt="Music Listening Icon" class="activity-icon">
                 </div>
             </div>
         </section>
         
-        <section>
-            <h1>What I've been listening to lately</h1>
+        <section id="section-music">
+            <h1>What Listen</h1>
             <div class="music-wrapper">
-                <!-- Luke Howard -->
-                <iframe class="music embed-yt" src="https://www.youtube.com/embed/vVk-qBSGrT8?si=aF01HPo7W9ziQSqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <!-- Pink Floyd -->
-                <iframe class="music embed-yt" src="https://www.youtube.com/embed/vi7cuAjArRs?si=BnGyzXLq01W4cbAp&amp;start=298" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <!-- Symphony of Unity -->
-                <iframe class="music embed-yt" src="https://www.youtube.com/embed/GKU-cL-heOg?si=vYhxWVg48N1MLPd3&amp;start=2343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="music-item embed-yt" src="https://www.youtube.com/embed/GKU-cL-heOg?si=vYhxWVg48N1MLPd3&amp;start=2343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Pink Floyd -->
+                <iframe class="music-item embed-yt" src="https://www.youtube.com/embed/vi7cuAjArRs?si=BnGyzXLq01W4cbAp&amp;start=298" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- Luke Howard -->
+                <iframe class="music-item embed-yt" src="https://www.youtube.com/embed/vVk-qBSGrT8?si=aF01HPo7W9ziQSqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <!-- Led Zeppelin -->
-                <iframe class="music embed-yt" src="https://www.youtube.com/embed/4gT63xovuWE?si=pf-66JiMX2ehRk3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="music-item embed-yt" src="https://www.youtube.com/embed/4gT63xovuWE?si=pf-66JiMX2ehRk3n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <!-- Ana Vidovic -->
-                <iframe class="music embed-yt" src="https://www.youtube.com/embed/e26zZ83Oh6Y?si=Uk82cpjSfb1FdTev&amp;start=185" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="music-item embed-yt" src="https://www.youtube.com/embed/e26zZ83Oh6Y?si=Uk82cpjSfb1FdTev&amp;start=185" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <!-- Wild Ambience -->
-                <iframe class="music embed-sc" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/400422621&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                <iframe class="music-item embed-sc" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/400422621&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
             </div>
         </section>
 
-        <section>
-            <h1>Favourite Games</h1>
+        <section id="section-games">
+            <h1>What Game</h1>
             <table>
                 <thead>
                     <td>Name</td>
@@ -139,72 +231,72 @@
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Wolfenstein_3D">Wolfenstein 3D</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Wolfenstein_3D" target="_blank">Wolfenstein 3D</a></td>
                         <td>1992</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/X-COM:_Interceptor">X-COM: Interceptor</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/X-COM:_Interceptor" target="_blank">X-COM: Interceptor</a></td>
                         <td>1998</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Ape_Escape">Ape Escape</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Ape_Escape" target="_blank">Ape Escape</a></td>
                         <td>1999</td>
                         <td>Playstation</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red,_Blue,_and_Yellow">Pokémon Yellow</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red,_Blue,_and_Yellow" target="_blank">Pokémon Yellow</a></td>
                         <td>1999</td>
                         <td>Gameboy Pocket</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/List_of_River_King_video_games">Legend of the River King</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/List_of_River_King_video_games" target="_blank">Legend of the River King</a></td>
                         <td>1999</td>
                         <td>Gameboy Color</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/The_Legend_of_Dragoon">Legend of Dragoon</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/The_Legend_of_Dragoon" target="_blank">Legend of Dragoon</a></td>
                         <td>2000</td>
                         <td>Playstation</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Diablo_II">Diablo II</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Diablo_II" target="_blank">Diablo II</a></td>
                         <td>2000</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Halo:_Combat_Evolved">Halo: Combat Evolved</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Halo:_Combat_Evolved" target="_blank">Halo: Combat Evolved</a></td>
                         <td>2001</td>
                         <td>Xbox</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Halo_2">Halo 2</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Halo_2" target="_blank">Halo 2</a></td>
                         <td>2004</td>
                         <td>Xbox</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Civilization_IV">Civilization IV</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Civilization_IV" target="_blank">Civilization IV</a></td>
                         <td>2005</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Far_Cry_3">Far Cry 3</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Far_Cry_3" target="_blank">Far Cry 3</a></td>
                         <td>2012</td>
                         <td>Xbox 360</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt">The Witcher 3: Wild Hunt</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt" target="_blank">The Witcher 3: Wild Hunt</a></td>
                         <td>2015</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Stardew_Valley">Stardew Valley</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Stardew_Valley" target="_blank">Stardew Valley</a></td>
                         <td>2016</td>
                         <td>PC</td>
                     </tr>
                     <tr>
-                        <td><a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2">Red Dead Redemption 2</a></td>
+                        <td><a href="https://en.wikipedia.org/wiki/Red_Dead_Redemption_2" target="_blank">Red Dead Redemption 2</a></td>
                         <td>2019</td>
                         <td>PC</td>
                     </tr>
@@ -213,6 +305,15 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer id="section-footer">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/AndrewPolak" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/andrewpolak/" target="_blank">LinkedIn</a></li>
+                <li><a href=""><del>Facebook</del></a></li>
+                <li><a href=""><del>Instagram</del></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

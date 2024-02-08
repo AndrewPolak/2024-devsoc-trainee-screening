@@ -1,47 +1,201 @@
-.imageiconclass {
-    width: 100px;
+/*
+Colour Pallete from: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25
+#606C38
+#283618
+#FEFAE0
+#DDA15E
+#BC6C25
+*/
+
+* {
+    font-family: sans-serif;
+    color: #283618;
 }
 
+html, body, header, footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #606C38;
+}
 
+main {
+    width: 800px;
+    margin: auto;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
+header, footer {
+    color: #023047; 
+    background-color: #DDA15E;
+    position: sticky;
+    z-index: 999;
+}
 
+header {
+    top: 0;
+    border-bottom: 1px solid #606C38;
+    box-shadow: 0px 4px 4px #606C38;
+}
+footer {
+    bottom: 0;
+    box-shadow: 0px -4px 4px #606C38;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+}
+header nav ul li, footer nav ul li {
+    font-size: 1.4em;
+    margin: 0 12px;
+    padding: 6px 0;
+}
+header nav ul li:hover, footer nav ul li:hover {
+    background-color: #BC6C25;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #BC6C25;
+}
+
+section {
+    background-color: #DDA15E;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Program Plan */
 
 .program-plan-wrapper {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    border: 2px solid #BC6C25;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 10px;
+}
+
+.pp-term, .pp-term-label, .pp-year-label {
+    margin: 8px;  
+    font-weight: bold;
+}
+
+.pp-term-label {
+    text-align: center;
+}
+
+.pp-year-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
 }
 
 .pp-term {
-    display: flex;
-    align-items: center; ####################
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
+.pp-course {
+    text-align: center;
 
+    width: 100%;
+    border: 2px solid #BC6C25;
+    border-radius: 4px;
+    margin: 4px;
 
-.activity-or-interest-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.activity-or-interest-item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
+.pp-course:hover {
+    background-color: #BC6C25;
+}
 
+.pp-course-code {
+    font-weight: bold;
+}
 
+.pp-course-desc {
+    font-size: x-small;
+}
 
+/* Activities */
 
-
-.music-wrapper {
+.activity-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.music {
+.activity-item {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #FEFAE0;
+    margin: 8px;
+    padding: 4px;
+
+    border-radius: 8px;
+    box-shadow: 0 0 2px #FEFAE0;
+
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+}
+
+.activity-icon {
+    width: 100px;
+    margin-top: 2px;
+    border-radius: 6px;
+}
+
+/* Music */
+
+.music-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-item {
     width: 352;
     height: 198;
+    margin: 12px;
+    border-radius: 4px;
+}
+
+/* Games */
+
+table {
+    margin-top: 10px;
+}
+
+thead {
+    font-weight: bold;
+    border-bottom: 1px solid black;
 }
